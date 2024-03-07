@@ -1,23 +1,21 @@
 let nome = prompt('Inserisci il tuo nome') //string | null
-console.log(nome)
+console.log('Nome: ' + nome)
 
 let cognome = prompt('Inserisci il tuo cognome') //string | null
-console.log(cognome)
+console.log('Cognome: ' + cognome)
 
 let colore = prompt('Qual è il tuo colore preferito?') //string | null
-console.log(colore)
+console.log('Colore preferito: ' + colore)
 
 let numero = prompt('Indica un numero da utilizzare')
-console.log(numero)
+console.log('Numero: ' + numero)
 
 let pswd = nome + cognome + colore + numero
+console.log('Password composta: ' + pswd)
 
-
-console.log(pswd)
 let cifre = prompt('Indica il numero di cifre del numero randomico da generare')
-
+console.log('Numero di cifre: ' + cifre)
 let rdmNum = Math.random() * (10 ** cifre)
-console.log(rdmNum)
 
 let pswdRandom = nome + cognome + colore + Math.round(rdmNum)
-console.log(pswdRandom)
+console.log('Password randomica: ' + pswdRandom)
